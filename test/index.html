@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>
+			Osr-Canvas&copy;ABCS
+		</title>
+		<script src="../bower_components/osr-class/lib/index.js"></script>
+		<script src="../lib/osr-canvas.js"></script>
+	</head>
+	<body>
+		<div>
+			<canvas id="mycanvas" height="300px" width="400px"></canvas>
+		</div>
+	</body>
+	<script>
+		var $ = function(id){
+			return document.getElementById(id);
+		}
+		var canvas = new OsrCanvas($("mycanvas"));
+		canvas.dline( { x: 0, y: 0 }, { x: 100, y:100 }, { color:"red", weight: 10 });
+		canvas.dline( { x: 100, y: 0 }, { x: 100, y:100 }, { color:"green", weight: 1 });
+		canvas.drect( { x: 100, y: 0 }, { w: 100, h:100 }, { color:"green", weight: 1 });
+		canvas.drect( { x: 100, y: 101 }, { w: 100, h:100 }, { color:"blue", weight: 1 , fill: true });
+		canvas.dbitmap("./images/demo.png",{ position: { x: 0, y : 0 }, size: { h: 100, w: 100 } });
+		
+		canvas.start();
+		
+		
+	</script>
+</html>

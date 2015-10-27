@@ -1,0 +1,25 @@
+{
+  "name": "osr-canvas",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/oscava/osr-canvas",
+  "authors": [
+    "张嘉华 <admin@cavacn.com>"
+  ],
+  "description": "osr,canvas",
+  "moduleType": [],
+  "keywords": [
+    "osr",
+    "canvas"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "osr-class": "~0.1.7"
+  }
+}
